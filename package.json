@@ -1,0 +1,36 @@
+{
+  "name": "proton-utils",
+  "version": "1.0.3",
+  "description": "前端工具库",
+  "browser": "dist/index.ts",
+  "main": "dist/protonutils.cjs.js",
+  "module": "dist/protonutils.esm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "cp package.json dist",
+    "build": "rm -rf ./dist && rollup --config rollup.config.build.js && npm run copy",
+    "dev": "rm -rf ./dist && rollup --config rollup.config.dev.js -w",
+    "publish": "node scripts/publish.js"
+  },
+  "keywords": [],
+  "author": "Baishu",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "commander": "^9.2.0",
+    "lodash": "^4.17.21",
+    "rollup": "^2.74.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-dev": "^2.0.4",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "shelljs": "^0.8.5",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  }
+}

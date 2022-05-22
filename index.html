@@ -1,0 +1,27 @@
+<!--
+ * @Descripttion : 
+ * @version      : 
+ * @Author       : Baishu
+ * @Date         : 2022-05-18 20:31:59
+ * @LastEditors  : Baishu
+ * @LastEditTime : 2022-05-22 16:30:06
+ * @FilePath     : /proton-utils/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rollup Example</title>
+</head>
+<body>
+    <span>baishu test</span>
+    <div id="container"></div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/lodash.js/4.17.21/lodash.core.js"></script>
+<script src="./dist/index.js"></script>
+<script>
+    console.log(window['proton-utils'].flatArray([1,2,[3,4,[5]]]))
+</script>
+</html>
