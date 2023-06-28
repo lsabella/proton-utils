@@ -1,7 +1,7 @@
 {
   "name": "proton-utils",
   "version": "1.0.3",
-  "description": "前端工具库",
+  "description": "前端工具库1",
   "browser": "dist/index.ts",
   "main": "dist/protonutils.cjs.js",
   "module": "dist/protonutils.esm.js",
